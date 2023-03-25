@@ -1,0 +1,57 @@
+/* You can always check the size of a variable using the sizeof() operator.*/
+
+#include <stdio.h>      
+int main() {
+  short a;
+  long b;
+  long long c;
+  long double d;
+
+  printf("size of short = %d bytes\n", sizeof(a));
+  printf("size of long = %d bytes\n", sizeof(b));
+  printf("size of long long = %d bytes\n", sizeof(c));
+  printf("size of long double= %d bytes\n", sizeof(d));
+  return 0;
+}
+/* o/p:
+size of short = 2 bytes
+size of long = 8 bytes
+size of long long = 8 bytes
+size of long double= 16 bytes
+*/
+
+/*
+C Input Output (I/O)
+In this tutorial, you will learn to use scanf() function to take input from the user, and printf() function to display output to the user.
+
+How does this program work?
+
+All valid C programs must contain the main() function. The code execution begins from the start of the main() function.
+The printf() is a library function to send formatted output to the screen. The function prints the string inside quotations.
+To use printf() in our program, we need to include stdio.h header file using the #include <stdio.h> statement.
+The return 0; statement inside the main() function is the "Exit status" of the program. It's optional.
+*/
+
+#include <stdio.h>    
+int main()
+{ 
+    // Displays the string inside quotations
+    printf("C Programming");
+    return 0;
+}
+o/p
+c programming
+
+Example 2: Integer Output
+
+#include <stdio.h>
+int main()
+{
+    int testInteger = 5;
+    printf("Number = %d", testInteger);
+    return 0;
+}
+/*
+o/p:
+Number = 5
+*/
